@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-color: #003566;
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(32, 50px);
+    grid-template-rows: 700px;
+    z-index: -1;
+
+}
+.background img{
+    height: 20px;
+    width: 20px;
+    animation: fall 10s infinite ease-out;
+    justify-self: center;
+    
+}
+main{
+    height: 95%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+@keyframes fall{
+    0%{
+        transform: translateY(-4px);
+    }
+     100%{
+        transform: translateY(650px);
+     }
+
+}
