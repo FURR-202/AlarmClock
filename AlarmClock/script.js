@@ -11,15 +11,38 @@ function createStars() {
     }
 }
 createStars();
+let border = document.querySelector("#border");
+border.addEventListener("mouseenter",()=>{
+    border.style.transform = "scale(1.1)";
+    border.style.transition = "transform 0.2s"
+})
+border.addEventListener("mouseleave",()=>{
+    border.style.transform = "scale(1)";
+})
 
-let hour = 1;
-let min = 60;
-let sec = 60;
-function timer(h,m,s){
-    let i = 1;
-    setInterval(() => {
-        console.log(i);
-        i++;
-    },1000);
-}
-timer(hour,min,sec);
+
+//Timer 
+// function timer(hour,min,sec) {
+//     let total_seconds = (hour*3600) + (min*60) + sec;
+//     if(total_seconds <= 0){
+//         console.log("Time's up!");
+//         return;
+//     }
+//     console.log(hour,min,sec)
+//     let next_hour = hour;
+//     let next_min = min;
+//     let next_sec = sec - 1;
+//     if(next_sec < 0){
+//         next_min--;
+//         next_sec = 59;
+//     }
+//     if(next_min < 0){
+//         next_hour--;
+//         next_min = 59
+//     }
+//         setTimeout(() => {
+//             timer(next_hour,next_min,next_sec);
+//         }, 1000);
+    
+// }
+// timer(1,59,0);

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alarm-Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background">
@@ -42,10 +45,23 @@
             <img  src="../Star 6.png"> 
     </div>
     <main>
+        <div id="border">
         <div class="container">
-            
+            <div class="time">
+                <p id="hour">00</p>
+                <p>:</p>
+                <p id="min">00</p>
+                <p>:</p>
+                <p id="sec">00</p>
+            </div>
+            <div id="btn">Start</div>
         </div>
+    </div>
+
     </main>
     <script src="script.js"></script>
 </body>
 </html>
+<!-- git remote add origin https://github.com/FURR-202/AlarmClock.git
+git branch -M main
+git push -u origin main -->
