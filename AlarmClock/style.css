@@ -24,7 +24,6 @@ html,body{
     width: 20px;
     animation: fall 10s infinite ease-out;
     justify-self: center;
-    
 }
 main{
     height: 95%;
@@ -37,7 +36,6 @@ main{
 main .container{
     height: 400px;
     width: 400px;
-    /* background-color:#2C2F24; */
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -48,11 +46,14 @@ main .time{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    color: white;
 }
 .time p{
     font-size: 5rem;
-    font-family: "Open Sans", sans-serif;
-    color: white;
 }
 #border{
     height: 400px;
@@ -60,21 +61,88 @@ main .time{
     border-radius: 50%;
     border: 25px solid  #ffd500;
 }
-#btn{
-    position: absolute;
+.btn{
     height: 35px;
     width: 115px;
-    background-color: #ffd500;
-    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
     font-family: "Open Sans", sans-serif;
-    font-size: x-large;
     border-radius: 20px;
     cursor: pointer;
+    
+}
+.container .btn{
+    background-color: #ffd500;
+    color: black;
     margin-top: 250px;
+    position: absolute;
+    font-weight: 600;
+    font-size: x-large;
+}
+.setTimerBox{
+    height: 400px;
+    width: 400px;
+    background-color:bisque;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.time-box{
+    height:120px;
+    width: 350px;
+    display: flex;
+    margin-bottom: 40px;
+}
+.time-box p{
+    font-size: 3.5rem;
+    margin-left: 18px;
+    color: black;
+}
+.setTimerBox .btn{
+    border-radius: 8px;
+    color: white;
+}
+#save{
+    color: black;
+    background-color: #edafb8;
+}
+#cancel{
+    background-color: #474747;
+    margin-left: 10px;
+}
+#cancel i{
+    color: white;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.setTimerBox input{
+    height: 10px;
+    width: 200px;
+    outline: none;
+    border: none;
+    background-color: black;
+    margin: 0px 0px 20px 6px;   
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+.setTimerBox input:hover{
+    border-bottom:2px solid #edafb8;
+}
+.btn-box{
+    display: flex;
+}
+.time-box i{
+    margin-left: 45px;
+    cursor: pointer;
+}
+.time-box .above-arrow{
+    transform: rotate(180deg);
 }
 
 @keyframes fall{

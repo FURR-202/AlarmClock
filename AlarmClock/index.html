@@ -6,8 +6,9 @@
     <title>Alarm-Clock</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <div class="background">
@@ -46,18 +47,44 @@
     </div>
     <main>
         <div id="border">
-        <div class="container">
-            <div class="time">
-                <p id="hour">00</p>
-                <p>:</p>
-                <p id="min">00</p>
-                <p>:</p>
-                <p id="sec">00</p>
+            <div class="container">
+                <div class="time">
+                    <p id="hour">00</p>
+                    <p>:</p>
+                    <p id="min">00</p>
+                    <p>:</p>
+                    <p id="sec">00</p>
+                </div>
+                <div class="btn" id="start" onclick="start()">Start</div>
             </div>
-            <div id="btn">Start</div>
         </div>
-    </div>
-
+        <div class="setTimerBox">
+            <div class="time-box">
+                <div class="hour">
+                    <i class="fa-solid fa-angle-down above-arrow" id="increase-hour" onclick="increaseHour()"></i>
+                    <p>00</p>
+                    <i class="fa-solid fa-angle-down down-arrow" id="decrease-hour" onclick="decreaseHour()"></i>
+                </div>
+                <p>:</p>
+                <div class="min">
+                    <i class="fa-solid fa-angle-down above-arrow" id="increase-min" onclick="increaseMin()"></i>
+                    <p>00</p>
+                    <i class="fa-solid fa-angle-down down-arrow" id="decrease-min" onclick="decreaseMin()"></i>
+                </div>
+                <p>:</p>
+                <div class="sec">
+                    <i class="fa-solid fa-angle-down above-arrow" id="increase-sec" onclick="increaseSec()"></i>
+                    <p>00</p>
+                    <i class="fa-solid fa-angle-down down-arrow" id="decrease-sec" onclick="decreaseSec()"></i>
+                </div>
+            </div>
+            <div><i class="fa-solid fa-pen-to-square"></i><input ></div>
+            <div class="btn-box">
+                <div class="btn" id="save" onclick="save()">Save</div>
+                <div class="btn" id="cancel" onclick="cancel()"><i class="fa-solid fa-xmark"></i>Cancel</div>
+            </div>
+            
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
