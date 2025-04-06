@@ -1,0 +1,227 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    display: grid;
+    grid-template-columns:280px 60px 60px 60px 280px;
+    grid-template-rows: 280px 60px 60px 60px 280px;
+    justify-content: center;
+}
+.dice{
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    transform-style: preserve-3d;
+    animation: roll 4s infinite linear;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.face{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    position: absolute;
+    border-radius: 14px;
+}  
+/* @keyframes roll {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    25% { transform: rotateX(90deg) rotateY(180deg); }
+    /* 50% { transform: rotateX(180deg) rotateY(360deg); }
+    75% { transform: rotateX(270deg) rotateY(540deg); }
+    100% { transform: rotateX(360deg) rotateY(720deg); }
+ } */
+
+.box{
+    height: 280px;
+    width:280px;
+}
+#red{
+    display: grid;
+    grid-template-columns:130px 130px ;
+    grid-template-rows:130px 130px ;
+    background-color: red;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-column:1/2 ;
+    grid-row:1/2;
+    
+}
+.red-path{
+    background-color: red;
+}
+#red-win{
+    height: 60px;
+    width: 60px;
+    background-color: rgba(231, 0, 0, 0.925);
+    grid-column:2/3;
+    grid-row: 3/4;
+
+}
+.piece{
+    height:50px;
+    width:50px;
+    object-fit: cover;
+}
+#green{
+    display: grid;
+    grid-template-columns:130px 130px ;
+    grid-template-rows:130px 130px ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: green;
+    grid-column:5/6 ;
+    grid-row:1/2;
+    justify-self: right;
+}
+.green-path{
+    background-color: green;
+}
+#green-win{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(12, 237, 12);
+    grid-column:3/4;
+    grid-row: 2/3;
+}
+#blue{
+    display: grid;
+    grid-template-columns:130px 130px ;
+    grid-template-rows:130px 130px ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: blue;
+    grid-column:1/2;
+    grid-row:5/6;
+}
+.blue-path{
+    background-color: blue;
+}
+#yellow{
+    display: grid;
+    grid-template-columns:130px 130px ;
+    grid-template-rows:130px 130px ;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: yellow;
+    grid-column:5/6 ;
+    grid-row:5/6 ;
+    justify-self: right;
+}
+#yellow-win{
+    height: 60px;
+    width: 60px;
+    background-color:rgba(255, 255, 0, 0.986);
+    grid-column:4/5;
+    grid-row: 3/4;
+}
+.yellow-path{
+    background-color: yellow;
+}
+.dot{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: 8px solid black;
+}
+
+#blue-win{
+    height: 60px;
+    width: 60px;
+    background-color:rgb(8, 119, 245);
+    grid-column:3/4;
+    grid-row: 4/5;
+}
+#win{
+    height: 60px;
+    width: 60px;
+    grid-column:3/4;
+    grid-row: 3/4;
+    object-fit: cover;
+
+}
+img{
+    height: 60px;
+    width: 60px;
+}
+.Vertical-path{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 47px 47px 47px 47px 47px 47px;
+}
+.Vertical-path .num{
+    border: 2px solid black;
+}
+.Horizontal-path{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 47px 47px 47px 47px 47px 47px;
+}
+.Horizontal-path .num{
+    border: 2px solid black;
+}
+#path4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#path5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#path6{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#path7{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+#path8{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+#path9{
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+#path10{
+    grid-column: 5/6;
+    grid-row: 2/3
+}
+#path11{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+#path12{
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
