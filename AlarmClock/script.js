@@ -12,6 +12,8 @@ function createStars() {
 }
 createStars();
 let border = document.querySelector("#border");
+
+//making smooth
 border.addEventListener("mouseenter",()=>{
     border.style.transform = "scale(1.1)";
     border.style.transition = "transform 0.2s"
@@ -19,6 +21,7 @@ border.addEventListener("mouseenter",()=>{
 border.addEventListener("mouseleave",()=>{
     border.style.transform = "scale(1)";
 })
+
 const hour = document.querySelector(".hour");
 let p_hour = hour.querySelector("p");
 const min = document.querySelector(".min");
@@ -106,7 +109,7 @@ time_box.addEventListener("click",()=>{
 let isRunning = false;
 
 function start() {
-    if (!isRunning) {
+    if(!isRunning) {
         isRunning = true;
         timer(fixedHour, fixedmin, fixedsec);
         fixedHour = 0;

@@ -33,9 +33,15 @@ main{
     align-items: center;
     justify-content: center;
 }
+#border{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 20px solid  #ffd500;
+}
 main .container{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -53,17 +59,12 @@ p{
     color: white;
 }
 .time p{
-    font-size: 5rem;
+    font-size: 4rem;
 }
-#border{
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-    border: 25px solid  #ffd500;
-}
+
 .btn{
     height: 35px;
-    width: 115px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,32 +76,37 @@ p{
 .container .btn{
     background-color: #ffd500;
     color: black;
-    margin-top: 250px;
+    margin-top: 200px;
     position: absolute;
     font-weight: 600;
     font-size: x-large;
 }
+
 .setTimerBox{
-    height: 400px;
-    width: 400px;
-    background-color:bisque;
+    height: 350px;
+    width: 350px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     display: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .time-box{
-    height:120px;
-    width: 350px;
+    height:100px;
+    width: 300px;
     display: flex;
     margin-bottom: 40px;
 }
 .time-box p{
     font-size: 3.5rem;
-    margin-left: 18px;
-    color: black;
+    margin-left: 16px;
+    color: white;
+}
+.time-box i{
+    color: white;
 }
 .setTimerBox .btn{
     border-radius: 8px;
@@ -124,12 +130,13 @@ p{
     width: 200px;
     outline: none;
     border: none;
-    background-color: black;
     margin: 0px 0px 20px 6px;   
-    color: white;
     border-radius: 8px;
     padding: 10px;
+}
 
+.fa-pen-to-square{
+    color: white;
 }
 .setTimerBox input:hover{
     border-bottom:2px solid #edafb8;
